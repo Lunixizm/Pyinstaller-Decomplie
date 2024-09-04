@@ -18,8 +18,8 @@ It is recommended to run the script in the same version of Python which was used
 ## Example
 
 ```
-X:\> python pyinstxtractor.py test.exe
-[+] Processing dist\test.exe
+X:\> python Anti-pyinstaller.py test.exe
+[+] Processing test.exe
 [+] Pyinstaller version: 2.1+
 [+] Python version: 36
 [+] Length of package: 5612452 bytes
@@ -28,7 +28,7 @@ X:\> python pyinstxtractor.py test.exe
 [+] Possible entry point: pyiboot01_bootstrap.pyc
 [+] Possible entry point: test.pyc
 [+] Found 133 files in PYZ archive
-[+] Successfully extracted pyinstaller archive: dist\test.exe
+[+] Successfully extracted pyinstaller archive: test.exe
 
 You can now use a python decompiler on the pyc files within the extracted directory
 ```
