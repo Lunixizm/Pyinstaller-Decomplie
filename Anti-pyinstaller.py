@@ -9,7 +9,7 @@ import shutil
 
 def get_pyc_file():
     if len(sys.argv) != 2:
-        print("Kullanım: python betik.py <dosya_adı>")
+        print("Using: python betik.py <dosya_adı>")
         return
 
     # Betiğin bulunduğu dizini al
@@ -34,7 +34,7 @@ def get_pyc_file():
     hedef_yol = os.path.join(betik_dizini, pyc_dosya_adi)
     shutil.copy(pyc_dosya_yolu, hedef_yol)
 
-    print(f"{pyc_dosya_adi} dosyası {hedef_yol} konumuna başarıyla kopyalandı.")
+    print(f"{pyc_dosya_adi} file {hedef_yol} successfully copied to directory.")
 
 class CTOCEntry:
     def __init__(self, position, cmprsdDataSize, uncmprsdDataSize, cmprsFlag, typeCmprsData, name):
@@ -265,7 +265,7 @@ class PyInstArchive:
                 # packages and modules are pyc files with their header intact
 
                 # From PyInstaller 5.3 and above pyc headers are no longer stored
-                # https://github.com/pyinstaller/pyinstaller/commit/a97fdf
+               
                 if data[2:4] == b'\r\n':
                     # < pyinstaller 5.3
                     if self.pycMagic == b'\0' * 4: 
